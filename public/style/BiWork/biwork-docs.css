@@ -1,0 +1,149 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/**
+ * Table of Contents
+ * # BIWORK
+ * # BINARY QUART OCTAL HEX
+ * # COLOR NAMING CONVENTIONS
+ * # CONFIGURABILITY configur ability
+ * # POP-UP
+ * # SIZES NAMING CONVENTIONS
+ */
+
+/*****************************************************************************/
+/* BIWORK */
+
+Biwork is a CSS Framework
+
+/*****************************************************************************/
+/* BINARY QUART OCTAL HEX */
+
+"[...] and then there were four ... I think."
+
+binary				-> empty space left
+binary-fill		-> empty space filled
+
+/*****************************************************************************/
+/* COLOR NAMING CONVENTIONS */
+
+GENERAL COLORS
+blue
+blue-dark
+blue-darker
+blue-darkest
+
+SPECIFIC COLORS
+bubblegum-blue
+bubblegum-blue-dark
+bubblegum-blue-darker
+candy-blue
+candy-blue-light
+candy-blue-lighter
+
+/*****************************************************************************/
+/* CONFIGURABILITY configur ability */
+
+	/* ********************* */
+	/* *** COLOR PALETTE *** */
+	/* ********************* */
+
+:root {} defines color palette
+
+color-palette.css can be created
+color-palette.css should overwrite
+
+  --background-color
+  --date
+  --error
+  --info
+	--interactable
+  --link
+  --link-hover
+	--text
+  --ok
+	--title
+  --transparent
+  --username
+
+color-palette.css aids Diff Color Themes on Diff /Views
+
+/*****************************************************************************/
+/* POP-UP */
+
+/**
+ *	FOLLOW CONVENTION
+ */
+
+<parent class="popup-parent" tabindex=0>
+	
+	<thumbnail class="popup-thumbnail">
+		// Thumbnail contents ... (<img />)
+	</thumbnail>
+
+	<child class="popup-child">
+		
+		<child-background class="popup-child-background">
+		</child-background>
+		
+		// Pop-up contents ...
+	
+	</child>
+	
+</parent>
+
+/**
+ *	CLASSES - MEANING - INTUITION
+ */
+
+.popup-parent
+	SET tabindex=0 ON YOUR .popup-parent MARKUP
+	is positioned along the page flow
+	nothing interesting
+
+.popup-thumbnail
+	encourages user to click
+	hidden on-click
+
+.popup-child
+	overlays pop-up content
+	shows on-click
+
+		.popup-child-single
+			width of pop-up
+			pop-up content doesnt dictate width
+			watch! it is viewport width vw
+			
+		.popup-child-binary
+			^^^
+			
+		.popup-child-quart
+			^^^
+			
+		.popup-child-octal
+			^^^
+			
+		.popup-child-hex
+			^^^
+			
+		.popup-child-[Y axis]						-[X axis]
+		.popup-child-[top|center|bottom]-[left-center-right]
+			9 Popping-up TURNS
+
+.popup-child-background
+	extra class holding a custom background .png
+	or a background color if .png not found
+
+/**
+ *	POP-UP CONTENTS
+ */
+
+contact form , logout form , news , last logged: yyyy-mm-dd
+anything you want
+
+mind you! you can add padding here
+DONT PAD POPUP CLASSES
+
+/*****************************************************************************/
+/* SIZES NAMING CONVENTIONS */
+
+xs s m l xl
